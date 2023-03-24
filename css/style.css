@@ -5,66 +5,18 @@
 body {
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(201, 218, 226); /* #ccd6d9 #b3c2cd rgb(162, 194, 206)*/
+    background-color: rgb(201, 218, 226);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+/* Header start*/
 header {
     display: flex;
-    background-color: #527997; /* #3e3f7b*/
+    background-color: #527997;
     height: 65px;
     width: 100%;
     justify-content: center;
     position: fixed;
     transition-duration: 0.5s;
-}
-
-h2 {
-    font-size: 40px;
-    padding-bottom: 6px;
-    font-weight: 500;
-    color: rgb(0, 112, 143);
-    margin: 0;
-}
-h3 {
-    font-size: 30px;
-    padding-bottom: 4px;
-    font-weight: 400;
-    color: rgb(0, 112, 143);
-    margin: 0;
-}
-h4 {
-    font-size: 24px;
-    padding-bottom: 2px;
-    font-weight: 300;
-    color: rgb(0, 112, 143);
-    margin: 0;
-}
-li {
-    margin: 12px;
-}
-footer {
-    display: flex;
-    background-color: #8494b1;
-    margin-top: 30px;
-    padding: 10px;
-    justify-content: center;
-}
-header > div {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-.header_left {
-    display: flex;
-}
-.header_left > button {
-    cursor: pointer;
-}
-.open_btn {
-    display: none;
 }
 header > div > div {
     display: flex;
@@ -81,7 +33,6 @@ header > div > div > a {
 header > div > div > a:hover {
     background-color: rgb(87, 136, 179);
 }
-
 header > div > div > button {
     align-self: center;
     height: 60%;
@@ -100,13 +51,60 @@ header > div > div > button:hover {
 header > div > div > button > i {
     height: 0;
 }
-
+header > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.header_left {
+    display: flex;
+}
+.header_left > button {
+    cursor: pointer;
+}
 .header_right {
     display: flex;
 }
+/*Header slut*/
+
+/* H paragrafer start*/
+h2 {
+    font-size: 40px;
+    padding-bottom: 6px;
+    font-weight: 500;
+    color: rgb(0, 112, 143);
+}
+h3 {
+    font-size: 30px;
+    padding-bottom: 4px;
+    font-weight: 400;
+    color: rgb(0, 112, 143);
+}
+h4 {
+    font-size: 24px;
+    padding-bottom: 2px;
+    font-weight: 300;
+    color: rgb(0, 112, 143);
+}
+/* H paragrafer slut*/
+li {
+    margin: 12px;
+}
+footer {
+    display: flex;
+    background-color: #8494b1;
+    margin-top: 30px;
+    padding: 10px;
+    justify-content: center;
+}
+.open_btn {
+    display: none;
+}
+
 .row {
     padding-top: 65px;
 }
+/* column a start */
 .column_a {
     display: grid;
     background-color: #444D57; /* #5a5a60*/
@@ -114,15 +112,14 @@ header > div > div > button > i {
     height: calc(100% - 65px);
     position: fixed;
     overflow-x: hidden;
-    padding-top: 10px;
     transition: 0.5s;
     align-content: space-between;
-    
 }
 .column_a > div {
     display: grid;
     width: 100%;
     height: fit-content;
+    margin: 5px 0 5px 0;
 }
 .column_a > div > a {
     justify-self: center;
@@ -138,6 +135,8 @@ header > div > div > button > i {
 .column_a > div > a:hover {
     background-color: #686f86;
 }
+/* column a slut */
+/* column b start */
 .column_b {
     display: grid;
     width: calc(100%);
@@ -164,12 +163,13 @@ header > div > div > button > i {
     min-width: 100%;
     width: 100%;
 }
+/* column b slut */
+/* column b indhold start */
 .content_PImg {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: 6fr 3fr;
     justify-self: center;
-    height: fit-content;
     width: 60%;
     margin-top: 5px;
     padding: 15px;
@@ -177,73 +177,65 @@ header > div > div > button > i {
 .content_PImg > article {
     padding: 20px 0px 20px 35px;
 }
-.example_box > ul {
-    padding: 1px;
-}
-.content_P > article {
-    padding: 20px 35px;
-}
-.content_2P > article {
-    padding: 20px 35px;
-}
-.content_4P > article {
-    padding: 10px 20px;
-    text-align: center;
-}
 .content_P {
     display: grid;
     justify-self: center;
-    height: fit-content;
     width: 60%;
     border-radius: 20px;
     margin-top: 5px;
     padding: 15px;
 } 
+.content_P > article {
+    padding: 20px 35px;
+}
 .content_2P {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
-    height: fit-content;
     width: 60%;
     border-radius: 20px;
     margin-top: 5px;
     padding: 15px;
 }
+.content_2P > article {
+    padding: 20px 35px;
+}
 .content_4P {
     display: grid;
     justify-self: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: fit-content;
     width: 100%;
     max-width: 100%;
     border-radius: 20px;
-} 
+}
 .content_4P > article {
+    padding: 10px 20px;
+    text-align: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
 .content_2box {
     display: grid;
     justify-self: center;
     margin-top: 15px;
 }
+.content_2box > div > div {
+    grid-template-columns: 1fr;
+}
 .content_box {
     display: grid;
     justify-self: center;
-    height: fit-content;
     width: 100%;
     border-radius: 20px;
 }
 .content_box > article {
     padding: 20px 35px;
 }
-.content_2box > div > div {
-    grid-template-columns: 1fr;
-}
 .example_box {
     background-color: #ffebab; /* #f5cb42 og #ffebab*/
-    padding: 0;
+}
+.example_box > ul {
+    padding: 1px;
 }
 .fakta_box {
     background-color: #ffdf7e; /* #ffdf7e*/
@@ -251,26 +243,24 @@ header > div > div > button > i {
 .text_box {
     background-color: #e5f1ff;
 }
-
+/* column b indhold slut */
 @media screen and (max-width: 1400px) {
     .column_b > div {
         width: 72%;
     }
 }
 @media screen and (max-width: 900px) { /*TODO: header skal gå væk på telefon når man scroller ned(eller blive mindre)*/
+    /* Header start */
     header {
-        display: flex;
-        width: 100%;
-        justify-content: center;
         height: 40px;
     }
     header > div > div > a {
-        display: flex;
-        align-self: center;
         padding: 9px 15px 11px 15px;
-        text-decoration: none;
-        color: #f5cb42;
-        transition-duration: 0.5s;
+    }
+    header > div > div > button {
+        width: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .header_left > button {
         position: fixed;
@@ -280,21 +270,30 @@ header > div > div > button > i {
         margin-left: 5px;
     }
     .header_left > a {
-        margin-left: 75px;
+        margin-left: 40px;
+    }
+    /* Header slut */
+    ul {
+        padding-left: 30px;
+    }
+    li {
+        font-size: medium;
+        list-style-type: none;
     }
     div {
         word-wrap: break-word;
     }
+    /* column a start */
     .column_a {
-        width: calc(2.5% + 125px);
-        height: 100%;
-        position: fixed;
-        overflow-x: hidden;
-        padding-top: 10px;
+        height: calc(100% - 40px);
     }
-    .row {
-        padding-top: 40px;
+    .column_a > div {
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
+    /* column a slut*/
+
+    /* column b start */
     .column_b {
         display: grid;
         width: calc(100%);
@@ -305,12 +304,25 @@ header > div > div > button > i {
     .column_b > div {
         width: 80%;
     }
+    .column_b > div > article {
+        margin-right: 0px;
+        padding: 10px;
+    }
+    .column_b > div > article > img {
+        height: 100%;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+    .column_b > div > article > p {
+        line-height: 1;
+    }
+    /* column b slut */
+    .row {
+        padding-top: 40px;
+    }
+    /* column b indhold start */
     .content_PImg {
-        display: grid;
         grid-template-columns: none;
-        justify-self: center;
-        height: fit-content;
-        font-size: 12px;
         border-radius: 20px;
         margin-top: 15px;
         background-color: rgb(255, 255, 255);
@@ -320,61 +332,89 @@ header > div > div > button > i {
         background-color: white;
     }
     .content_2P {
-        display: grid;
-        grid-gap: 15px;
         grid-template-columns: none;
-        justify-self: center;
-        height: fit-content;
-        border-radius: 20px;
         margin-top: 15px;
         padding: 10px 15px 25px 15px;
         background-color: rgb(255, 255, 255);
     }
     .content_2box {
-        display: grid;
         grid-gap: 15px;
-        grid-template-rows: 1fr 3fr;
-        justify-self: center;
-        height: fit-content;
         border-radius: 20px;
-        margin-top: 5px;
         padding: 15px;
+        background-color: #ffffff;
     }
     .content_4P {
-        display: grid;
-        justify-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-row-gap: 15px;
-        border-radius: 20px;
-        background-color: rgb(255, 255, 255);
     }
-    .content_2box {
-        background-color: #ffffff;
+    .example_box {
+        background-color: #ffebab; /* #f5cb42 og #ffebab*/
     }
-    .column_b > div > article {
-        background-color: #ffeba1;
-        margin-right: 0px;
-        padding: 10px;
+    .fakta_box {
+        background-color: #ffdf7e; /* #ffdf7e*/
     }
+    .text_box {
+        background-color: #e5f1ff;
+    }
+    /* column b indhold slut */
+    
+}
+@media screen and (max-width: 350px) {
     ul {
-        padding-left: 30px;
+        margin: 0;
+        font-size: 10px;
     }
     li {
-        font-size: medium;
-        list-style-type: none;
-
+        margin: 0;
+        font-size: 10px;
     }
-    .column_b > div > article > img {
-        max-height: 100%;
+    header > div > div > a {
+        padding: 10px 5px 10px 5px;
+    }
+    /* column b start */
+    .column_b {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .column_b > div {
+        display: grid;
+        justify-content: flex-start;
+    }
+    .column_b > div > article {
         max-width: 100%;
-        height: 100%;
-        border-radius: 20px;
-        margin-top: 15px;
+        font-size: 10px;
     }
     .column_b > div > article > p {
-        font-size: large;
-        line-height: 1;
+        font-size: 10px;
     }
-    
+    /* column b slut */
+    .column_a > div > a {
+        font-size: 10px;
+        padding: 5px 0;
+    }
+    .column_a > div {
+        margin-top: 2px;
+    }
+    .example_box {
+        font-size: 10px;
+    }
+    .content_box > article {
+        padding: 5px;
+    }
+    .content_2box {
+        grid-template-rows: auto;
+    }
+    p {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: medium;
+    }
+    h2 {
+        font-size: medium;
+    }
+    h3 {
+        font-size: medium;
+    }
 }
